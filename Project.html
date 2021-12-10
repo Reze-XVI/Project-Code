@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Project</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*This is used to style the header for the page*/
+header {
+  background-color: rgb(184, 5, 201);
+  padding: 30px;
+  text-align: left;
+  font-size: 35px;
+  color: white;
+}
+
+/*This is used to create 2 boxes right next to each other to make it look nicer*/
+nav {
+  float: left;
+  width: 30%;
+  height: 500px;
+  background: rgb(72, 211, 30);
+  padding: 20px;
+}
+
+/*This is used to style the list that is within the smaller box*/
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: white;
+  height: 500px;
+}
+
+/*This is used to make it so that the 2 boxes are gone once it gets to the footer*/
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*This is used to style the footer for the pages*/
+footer {
+  background-color: rgb(184, 5, 201);
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <img src="Images/Hue.png" alt="Logo" style="width:150px;height:150px;float: right;">
+  <h2>Video Game Archive</h2>
+</header>
+<section>
+  <nav>
+    <ul>
+      <li><a href="Login.html">Register/Login</a></li> <!-- I can use this to link to other html files, therefore use it to link to database stuff and login.-->
+      <li><a href="Game Year.php">Game of the Year Winners</a></li>
+      <li><a href="Console.php">Console Releases</a></li>
+      <li><a href="Personal Games.html">Personal Game of the Years</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Welcome to Video Game Archive</h1>
+    <p>This site is dedicated to documenting all things to do with videogames.</p>
+    <p>Currently we have set up the Game of the Year archive to document all the games that we chosen as Game of the Year throughout the years.</p>
+    <p>We also have set up the ability to see when consoles were released so that anyone who wants to see when the consoles they currently play and used to play were released they can.</p>
+    <p>Also we have set up a page for our personal choices for the game of the year and explanation's on each one</p>
+    <img src="Images/Best-Gaming-Consoles.jpg" alt="Consoles" style="width: 300px;height: 200px;">
+    <img src="Images/The-Game-Awards-2021-2.jpg" alt="Game Awards" style="width: 300px;height: 200px;float: right;">
+  </article>
+</section>
+
+<footer>
+</footer>
+
+</body>
+</html>
+

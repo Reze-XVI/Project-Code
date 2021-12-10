@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<form method="POST" action="login1.php">
+    <!-- I have used this to divide the code into section as to make it look a lot neater -->
+    <div class="container">
+    <!-- This is used to make the text appear at the center of the screen telling people to register-->
+    <h1 style="text-align: center;">Please Login here.</h1> 
+    <p>Fill in the login details.</p>
+    <hr> <!-- this is used to make a break in the page to seperate the parameters-->
+    <label for="username"><b>Enter Username</b></label>
+    <!-- I have made it so that the parameters are required otherwise they dont let you through-->
+    <input type="text" placeholder="Enter Username" name="username" required>
+    <label for="passwrd"><b>Enter Password</b></label>
+    <input type="password" placeholder="Enter Password" name="passwrd" required>
+    <hr>
+    <!-- This code is used to make a button that says submit once the user has typed in all the necassary boxes. -->
+    <input type="submit" name="submit" value="Login">
+</form>
